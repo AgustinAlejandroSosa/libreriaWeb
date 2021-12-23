@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <title>Añadir Cliente</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </head>
+    <body style="background-color: beige">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger bg-gradient">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link active btn btn-light m-2 bg-gradient rounded-pill btn-sm" href="/home/inicio"><i class="bi bi-house-fill fs-6"></i>Inicio</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link btn btn-light bg-gradient btn-sm rounded-pill m-2" href="/home/logout"><i class="bi bi-box-arrow-left fs-6 m-1" style="color:black"></i>Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h2 class="text-center m-2">Complete los siguientes campos</h2>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="text-center col-4">
+
+        <form action="/cliente/crear-cliente" modelAttribute="cliente" method="post">
+
+            <label class="form-label" for="dni">Dni</label>
+            <input class="form-control" type="text" name="dni" id="dni" placeholder="43593402" required=required> 
+            
+            <label class="form-label" for="nombre">Nombre y apellido</label>
+            <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Marco Antonio" required="required">
+            
+            <label class="form-label" for="domicilio">Domicilio</label>
+            <input class="form-control" type="text" name="domicilio" id="domicilio" placeholder="Lisandro St. 4005" required=required> 
+            
+            <label class="form-label" for="telefono">Telefono</label>
+            <input class="form-control" type="text" name="telefono" id="telefono" placeholder="4456789240" required=required> 
+            
+            <label class="form-label" for="password">Contraseña</label>
+            <input class="form-control" type="password" name="passwordd" id="password"  required=required> 
+            
+            <label class="form-label" for="password2">Repita Contraseña</label>
+            <input class="form-control" type="password" name="password2" id="password2" required=required> 
+
+            <div class="text-center">
+                <button type="submit" class="mt-2 btn btn-danger bg-gradient rounded-pill mx-auto">
+                    Crear Cliente
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+</div>
+
+        <br>
+
+        <h5 class="text-center">
+            <a class="btn btn-danger bg-gradient rounded-pill " href="/cliente/listado">Volver</a>
+        </h5>
+    </body>
+</html>

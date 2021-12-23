@@ -1,0 +1,26 @@
+{
+    "elements": {},
+    "attributes": {
+        "th:text": {
+            "context": "td"
+        },
+        "modelattribute": {
+            "context": "form"
+        },
+        "integrity": {
+            "context": "link"
+        },
+        "th:object": {
+            "context": "form"
+        },
+        "th:each": {
+            "context": "tr"
+        },
+        "th:href": {
+            "context": "a"
+        },
+        "th:field": {
+            "context": "input"
+        }
+    }
+}
