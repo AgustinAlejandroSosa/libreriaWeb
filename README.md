@@ -1,5 +1,15 @@
-# libreriaWeb
-Este proyecto intenta emular un sistema de reservas de libros.
-Para realizar el proyecto use SpringBoot y Bootstrap como libreria de estilos.
-En este portal web uno puede registrarse como usuario, iniciar sesión y ver un listado de libros a los que puede solicitar prestamos.
-Hay una interfaz para el ADMINISTRADOR que puede cargar,modificar y eliminar libros, editoriales, autores y ver informacion sobre los clientes y los prestamos.
+This project tries to emulate a book reservation system.
+In this web portal one can register as a user, log in and see a list of books to which you can request loans.
+There is an interface for the ADMINISTRATOR that can load, modify and delete books, publishers, authors and view information about clients and loans.
+
+ADMINISTRATOR PROFILE:
+
+- username: 43943615
+- password: Admin1234
+
+
+TECH STACK:
+- Spring boot 2.6.2
+- MySQL 8.0
+- BootStrap 5.1
+- JDK 1.8.0
