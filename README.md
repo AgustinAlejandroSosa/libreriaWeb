@@ -4,8 +4,8 @@ There is an interface for the ADMINISTRATOR that can load, modify and delete boo
 
 ADMINISTRATOR PROFILE:
 
-- username: 43943615
-- password: Admin1234
+- username:43943615
+- password:200500123a
 
 
 TECH STACK:
@@ -13,3 +13,8 @@ TECH STACK:
 - MySQL 8.0
 - BootStrap 5.1
 - JDK 1.8.0
+
+FUTURE IMPROVEMENTS:
+- FULL RESPONSIVE DESIGN
+- ENABLE DOWNLOAD BOOKS
+- DETAILS SECTION FOR EACH BOOK
